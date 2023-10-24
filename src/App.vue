@@ -140,7 +140,7 @@ export default {
             loadingText: 'Loading...',
             textColor: '#ffffff',
             textSize: 20,
-            textWeight: 500,
+            textWeight: 800,
             disableScrolling: false,
         },
         code: ``,
