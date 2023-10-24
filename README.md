@@ -32,6 +32,7 @@ npm install --save vue3-ui-preloader
 
 In your main.js
 ```js
+import Vue from "vue";
 import loader from "vue3-ui-preloader";
 
 // Import the CSS or use your own!
@@ -64,6 +65,7 @@ In your template
 
 In your main.js
 ```js
+import Vue from "vue";
 import loader from "vue3-ui-preloader";
 
 // Import the CSS or use your own!
