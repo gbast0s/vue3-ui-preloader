@@ -3,6 +3,7 @@
   "license": "MIT",
   "version": "1.0.0",
   "private": false,
+  "description": "Vue3 preloader component made with CSS transistions and animations, easy to use, integrate and customize.",
   "keywords": [
     "vuejs",
     "vue3",
