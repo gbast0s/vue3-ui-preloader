@@ -64,7 +64,7 @@
                     <input type="range" class="form-range" v-model="styling.size" min="0" max="30">
                     <h5>Text Size: {{ styling.textSize }}px</h5>
                     <input type="range" class="form-range" v-model="styling.textSize" min="0" max="30">
-                    <h5>Text Weight: {{ styling.textWeight }}px</h5>
+                    <h5>Text Weight: {{ styling.textWeight }}</h5>
                     <input type="range" class="form-range" v-model="styling.textWeight" min="100" max="1000" step="50">
                     <h5>Speed: {{ styling.speed }}s</h5>
                     <div>
