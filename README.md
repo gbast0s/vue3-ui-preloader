@@ -1,4 +1,4 @@
-![chrome_54Uk8Qpx8p](https://user-images.githubusercontent.com/54861487/86740454-4a074e00-c054-11ea-8d35-ddcb438982e7.png)
+![chrome_54Uk8Qpx8p](https://github.com/gbast0s/vue3-ui-preloader/assets/82844195/86ddd302-3432-43b8-b377-52e53bef4e7e)
 
 [![Codacy Badge](https://app.codacy.com/project/badge/Grade/6325ad24ccc14097953ee6dc20109827)](https://app.codacy.com/gh/gbast0s/vue3-ui-preloader/dashboard?utm_source=gh&utm_medium=referral&utm_content=&utm_campaign=Badge_grade)
 [![Netlify Status](https://api.netlify.com/api/v1/badges/19671b66-a541-4d59-805e-fe217b1e0955/deploy-status)](https://app.netlify.com/sites/vue3-ui-preloader/deploys)
@@ -50,8 +50,6 @@ In your template
 >note(you can either use the [playground](https://vue3-ui-preloader.netlify.app/) website to automatically get all the props set or you can set them manaully using the below prop list. You can also resort to not passing any prop, in this case the preloader will use default settings.)
 
 ## Via CDN
-
-CDN demo link - http://jsfiddle.net/8961cm0s/1/
 
 In your index.html
 ```html
