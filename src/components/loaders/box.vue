@@ -62,23 +62,24 @@ export default {
     created() {
         let root = document.documentElement;
         root.style.setProperty('--time-animation', "loading "+ this.speed +"s linear infinite");
-        var c;
-        if(/^#([A-Fa-f0-9]{3}){1,2}$/.test(this.bg)){
-            c= this.bg.substring(1).split('');
-            if(c.length== 3){
-                c= [c[0], c[0], c[1], c[1], c[2], c[2]];
-            }
-            c= '0x'+c.join('');
+        if(/^#([A-Fa-f0-9]{3}){1,2}$/.test(this.bg))
+        {
+            let c = this.bg.substring(1).split('');
+            if(c.length == 3) c= [c[0], c[0], c[1], c[1], c[2], c[2]];
+
+            c = '0x'+c.join('');
             this.bgcolors= 'rgba('+[(c>>16)&255, (c>>8)&255, c&255].join(',')+',' + this.opacity/100 +')';
         }
     }
 }
 </script>
 
-<style >
+<style>
+
     :root{
         --time-animation: loading 2s linear infinite;
     }
+
     #overlay-box{
         background-color: rgba(52,58,64,1);
         width: 100%;

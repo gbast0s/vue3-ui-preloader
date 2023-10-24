@@ -67,13 +67,12 @@ export default {
         root.style.setProperty('--load-text-size', this.textSize + 'px');
         root.style.setProperty('--load-text-weight', this.textWeight);
 
-        var c;
-        if(/^#([A-Fa-f0-9]{3}){1,2}$/.test(this.bg)){
-            c= this.bg.substring(1).split('');
-            if(c.length== 3){
-                c= [c[0], c[0], c[1], c[1], c[2], c[2]];
-            }
-            c= '0x'+c.join('');
+        if(/^#([A-Fa-f0-9]{3}){1,2}$/.test(this.bg))
+        {
+            let c = this.bg.substring(1).split('');
+            if(c.length == 3) c= [c[0], c[0], c[1], c[1], c[2], c[2]];
+
+            c = '0x'+c.join('');
             this.bgcolors= 'rgba('+[(c>>16)&255, (c>>8)&255, c&255].join(',')+',' + this.opacity/100 +')';
         }
     }   
@@ -83,6 +82,7 @@ export default {
 
 
 <style>
+
     :root{
         --time-animation: load .7s infinite alternate ease-in-out;
         --color-bar: #ffbb0f;
@@ -117,7 +117,6 @@ export default {
         top: 50%;
         left: 50%;
         transform: translate(-50%,-50%);
-        text-transform: uppercase;
         font-weight: 900;
         color: #ce4233;
         letter-spacing: 0.2em;

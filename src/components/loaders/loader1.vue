@@ -67,21 +67,19 @@ export default {
         root.style.setProperty('--load-text-size', this.textSize + 'px');
         root.style.setProperty('--load-text-weight', this.textWeight);
         
+        if(/^#([A-Fa-f0-9]{3}){1,2}$/.test(this.bg))
+        {
+            let c = this.bg.substring(1).split('');
+            if(c.length == 3) c= [c[0], c[0], c[1], c[1], c[2], c[2]];
 
-        var c;
-        if(/^#([A-Fa-f0-9]{3}){1,2}$/.test(this.bg)){
-            c= this.bg.substring(1).split('');
-            if(c.length== 3){
-                c= [c[0], c[0], c[1], c[1], c[2], c[2]];
-            }
-            c= '0x'+c.join('');
+            c = '0x'+c.join('');
             this.bgcolors= 'rgba('+[(c>>16)&255, (c>>8)&255, c&255].join(',')+',' + this.opacity/100 +')';
         }
     }
 }
 </script>
 
-<style >
+<style>
 
     :root{
         --time-animation: spin 2s linear infinite;
@@ -91,6 +89,7 @@ export default {
     }
 
     #overlay-spinner{
+
         height: 100%;
         width: 100%;
         position: fixed;
@@ -133,5 +132,4 @@ export default {
         100%{ transform: rotate(360deg);}
 
     }
-
 </style>

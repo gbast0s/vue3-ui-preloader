@@ -61,23 +61,25 @@ export default {
     created() {
         let root = document.documentElement;
         root.style.setProperty('--time-animation', "load7 " + this.speed + "s infinite ease-in-out");
-        var c;
-        if(/^#([A-Fa-f0-9]{3}){1,2}$/.test(this.bg)){
-            c= this.bg.substring(1).split('');
-            if(c.length== 3){
-                c= [c[0], c[0], c[1], c[1], c[2], c[2]];
-            }
-            c= '0x'+c.join('');
+        
+        if(/^#([A-Fa-f0-9]{3}){1,2}$/.test(this.bg))
+        {
+            let c = this.bg.substring(1).split('');
+            if(c.length == 3) c= [c[0], c[0], c[1], c[1], c[2], c[2]];
+
+            c = '0x'+c.join('');
             this.bgcolors= 'rgba('+[(c>>16)&255, (c>>8)&255, c&255].join(',')+',' + this.opacity/100 +')';
         }
     }
 }
 </script>
 
-<style >
+<style>
+
     :root{
         --time-animation: load7 0.7s infinite ease-in-out;
     }
+
     #overlay-dots{
         background-color: rgba(52,58,64,1);
         height: 100%;
@@ -89,6 +91,7 @@ export default {
         bottom: 0;
         z-index:1000;
     }
+
     .loader-dots,
     .loader-dots:before,
     .loader-dots:after {
@@ -100,6 +103,7 @@ export default {
         -webkit-animation: var(--time-animation);
         animation: var(--time-animation);
     }
+
     .loader-dots {
         color: black;
         font-size: 10px;
@@ -117,20 +121,24 @@ export default {
         -webkit-animation-delay: -0.16s;
         animation-delay: -0.16s;
     }
+
     .loader-dots:before,
     .loader-dots:after {
         content: '';
         position: absolute;
         top: 0;
     }
+
     .loader-dots:before {
         left: -3.5em;
         -webkit-animation-delay: -0.32s;
         animation-delay: -0.32s;
     }
+
     .loader-dots:after {
         left: 3.5em;
     }
+
     @-webkit-keyframes load7 {
         0%,
         80%,
@@ -141,6 +149,7 @@ export default {
             box-shadow: 0 2.5em 0 0;
         }
     }
+
     @keyframes load7 {
         0%,
         80%,
