@@ -1,6 +1,11 @@
 {
   "name": "vue3-ui-preloader",
   "license": "MIT",
+  "author": "gbast0s",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gbast0s/vue3-ui-preloader.git"
+  },
   "version": "1.0.0",
   "private": false,
   "description": "Vue3 preloader component made with CSS transistions and animations, easy to use, integrate and customize.",
