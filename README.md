@@ -34,6 +34,9 @@ In your main.js
 ```js
 import loader from "vue3-ui-preloader";
 
+//CSS
+import "vue3-ui-preloader/dist/loader.css"
+
 const app = createApp(App)
     .use(loader)
 
@@ -67,6 +70,9 @@ In your template
 In your main.js
 ```js
 import loader from "vue3-ui-preloader";
+
+//CSS
+import "vue3-ui-preloader/dist/loader.css"
 
 const app = createApp(App)
     .use(loader)
