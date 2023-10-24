@@ -55,7 +55,7 @@ In your template
 </template>
 ```
 
->note(you can either use the [playground](https://vue3-ui-preloader.netlify.app/) website to automatically get all the props set or you can set them manaully using the below prop list. You can also resort to not passing any prop, in this case the preloader will use default settings.)
+>note (you can either use the [playground](https://vue3-ui-preloader.netlify.app/) website to automatically get all the props set or you can set them manaully using the below prop list. You can also resort to not passing any prop, in this case the preloader will use default settings.)
 
 ## Via CDN
 
