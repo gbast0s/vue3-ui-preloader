@@ -24,6 +24,8 @@ npm link - https://www.npmjs.com/package/vue3-ui-preloader
 ## Installation
 
 ```bash
+# use yarn
+yarn add vue-ui-preloader
 # use npm
 npm install --save vue3-ui-preloader
 ```
