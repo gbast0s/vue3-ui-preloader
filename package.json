@@ -5,6 +5,9 @@
   "private": false,
   "keywords": [
     "vuejs",
+    "vue3",
+    "vue-preloader",
+    "vue3-preloader",
     "preloader",
     "loader",
     "spinner",
