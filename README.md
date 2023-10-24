@@ -1,51 +1,53 @@
 ![chrome_54Uk8Qpx8p](https://user-images.githubusercontent.com/54861487/86740454-4a074e00-c054-11ea-8d35-ddcb438982e7.png)
 
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/52e8f8d3a38e4c8ab3a2539ecfd88b5b)](https://app.codacy.com/gh/Bot-Academia/Vue-ui-preloader?utm_source=github.com&utm_medium=referral&utm_content=Bot-Academia/Vue-ui-preloader&utm_campaign=Badge_Grade_Dashboard)
-[![Netlify Status](https://api.netlify.com/api/v1/badges/f88fe30e-103a-4157-8ead-30de668b037c/deploy-status)](https://app.netlify.com/sites/vue-preloader/deploys)
-
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/6325ad24ccc14097953ee6dc20109827)](https://app.codacy.com/gh/gbast0s/vue3-ui-preloader/dashboard?utm_source=gh&utm_medium=referral&utm_content=&utm_campaign=Badge_grade)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/19671b66-a541-4d59-805e-fe217b1e0955/deploy-status)](https://app.netlify.com/sites/vue3-ui-preloader/deploys)
 [![Language](https://img.shields.io/badge/language-vue-green.svg)](https://img.shields.io/badge/language-vue-green.svg)
 [![License](https://img.shields.io/badge/license-MIT-000000.svg)](https://img.shields.io/badge/license-MIT-000000.svg)
-[![NPM Package](https://img.shields.io/npm/v/vue-ui-preloader.svg)](https://www.npmjs.com/package/vue-ui-preloader) 
-[![NPM Downloads](https://img.shields.io/npm/dm/vue-ui-preloader.svg)](https://www.npmjs.com/package/vue-ui-preloader)
-	<a href="https://github.com/vuejs/awesome-vue#loader"><img src="https://awesome.re/mentioned-badge.svg" alt="Mentioned in Awesome-Vue" /></a>
+[![NPM Package](https://img.shields.io/npm/v/vue3-ui-preloader.svg)](https://www.npmjs.com/package/vue3-ui-preloader) 
+[![NPM Downloads](https://img.shields.io/npm/dm/vue3-ui-preloader.svg)](https://www.npmjs.com/package/vue3-ui-preloader)
+	<!-- <a href="https://github.com/vuejs/awesome-vue#loader"><img src="https://awesome.re/mentioned-badge.svg" alt="Mentioned in Awesome-Vue" /></a> -->
 
 
-[![NPM](https://nodei.co/npm/vue-ui-preloader.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/vue-ui-preloader/)
+[![NPM](https://nodei.co/npm/vue3-ui-preloader.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/vue3-ui-preloader/)
+
+Remake made from: [Vue-ui-preloader](https://www.npmjs.com/package/vue-ui-preloader).
 
 ## Demo and playground
-Live demo -  https://vue-preloader.netlify.app/
+Live demo -  https://vue3-ui-preloader.netlify.app/
 
-[Playground Website](https://vue-preloader.netlify.app/).
+[Playground Website](https://vue3-ui-preloader.netlify.app/).
 Adjust the settings using the playground options. On the bottom of the page you will find the source code that you can directly use in your project or you can manually change the props.
 
-npm link - https://www.npmjs.com/package/vue-ui-preloader
+npm link - https://www.npmjs.com/package/vue3-ui-preloader
 
 ## Installation
 
 ```bash
 # use npm
-npm i git+https://github.com/gbast0s/Vue-ui-preloader-Vue-3.git
+npm install --save vue3-ui-preloader
 ```
 
 ## Usage
 
-Vue 2 Sandbox link - https://codesandbox.io/s/hungry-grass-7fx4z?file=/src/App.vue
-
 In your main.js
 ```js
-import loader from "vue-ui-preloader";
+import loader from "vue3-ui-preloader";
 
-Vue.use(loader);
+const app = createApp(App)
+    .use(loader)
+
+app.mount('#app')
 ```
 
 In your template
 ```vue
 <template>
-  <loader object="#ff9633" color1="#ffffff" color2="#17fd3d" size="5" speed="2" bg="#343a40" objectbg="#999793" opacity="80" name="circular"></loader>
+<loader  name="spinning" loadingText="Loading..." textColor="#ffffff" textSize="20" textWeight="500" object="#ff9633" color1="#ffffff" color2="#17fd3d" size="5" speed="2" bg="#343a40" objectbg="#999793" opacity="80" :disableScrolling="true"></loader>
 </template>
 ```
 
->note(you can either use the [playground](https://vue-preloader.netlify.app/) website to automatically get all the props set or you can set them manaully using the below prop list. You can also resort to not passing any prop, in this case the preloader will use default settings.)
+>note(you can either use the [playground](https://vue3-ui-preloader.netlify.app/) website to automatically get all the props set or you can set them manaully using the below prop list. You can also resort to not passing any prop, in this case the preloader will use default settings.)
 
 ## Via CDN
 
@@ -53,27 +55,28 @@ CDN demo link - http://jsfiddle.net/8961cm0s/1/
 
 In your index.html
 ```html
-<script src="https://unpkg.com/vue-ui-preloader"></script>
-<link rel="stylesheet" type="text/css" href="https://unpkg.com/vue-ui-preloader/dist/loader.css">
+<script src="https://unpkg.com/vue3-ui-preloader"></script>
+<link rel="stylesheet" type="text/css" href="https://unpkg.com/vue3-ui-preloader/dist/loader.css">
 ```
 
 In your template
 ```html
 <div id="app">
-  <loader object="#ff9633" color1="#ffffff" color2="#17fd3d" size="5" speed="2" bg="#343a40" objectbg="#999793" opacity="80" name="circular"></loader>
+<loader  name="spinning" loadingText="Loading..." textColor="#ffffff" textSize="20" textWeight="500" object="#ff9633" color1="#ffffff" color2="#17fd3d" size="5" speed="2" bg="#343a40" objectbg="#999793" opacity="80" :disableScrolling="true"></loader>
 </div>
 ```
 
 In your main.js
 ```js
-Vue.use(loader)
+import loader from "vue3-ui-preloader";
 
-new Vue({
-  el: '#app',
-  components:{
-  loader:loader
-  }
-});
+const app = createApp(App)
+    .use(loader)
+
+app.component('loader', loader)
+
+
+app.mount('#app')
 ```
 
 ## Props
@@ -81,6 +84,10 @@ new Vue({
 |:-----|:-----|:--------|:------------|
 | name | string | 'spinning' | decides the type of loader |
 | object | string | '#ff9633' | set the color of the loaders. hex or color |
+| loadingText | string | 'Loading...' | set the text of some loaders. |
+| textColor | string | '#ffffff' | set the color of the loadingText. hex or color |
+| textSize | number | '20' | set the size of the loadingText. |
+| textWeight | number | '500' | set the weight of the loadingText. |
 | color1 | string | only for circular | set the color of the circular loader disk1. hex or color |
 | color2 | string | only for circular | set the color of the circular loader disk2. hex or color |
 | size | number | 5 | set the size of loader |
@@ -92,5 +99,4 @@ new Vue({
 
 ## Author
 
-&#169; [Vinayak sharma](https://github.com/vinayaksh42)
- [Hrishikesh Agarwal](https://github.com/codetheorem)
+&#169; [Gonçalo Bastos](https://github.com/gbast0s)

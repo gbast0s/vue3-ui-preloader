@@ -17,14 +17,17 @@
 
       <div class="row justify-content-md-center">
           <div class="col-md-auto">
-              <a href="https://www.npmjs.com/package/vue-ui-preloader"><img src="https://img.shields.io/npm/v/vue-ui-preloader.svg" class="batch"></a>
-              <a href="https://www.npmjs.com/package/vue-ui-preloader"><img src="https://img.shields.io/npm/dm/vue-ui-preloader.svg" class="batch"></a>
+              <a href="https://www.npmjs.com/package/vue3-ui-preloader"><img src="https://img.shields.io/npm/v/vue3-ui-preloader.svg" class="batch"></a>
+              <a href="https://www.npmjs.com/package/vue3-ui-preloader"><img src="https://img.shields.io/npm/dm/vue3-ui-preloader.svg" class="batch"></a>
           </div>
       </div>
       <h1><b><span id="ui">UI</span><span id="topia">topia</span></b></h1>
 
-      <p class="row justify-content-md-center">Vue-Ui-Loader is a preloader component made with CSS transistions and animations</p>
-
+      <p class="row justify-content-md-center">Vue3-Ui-Loader is a preloader component made with CSS transistions and animations</p>
+      <div class="remake">
+        <span class="row justify-content-md-center">Remake made from:</span>
+        <a href="https://www.npmjs.com/package/vue-ui-preloader" target=”_blank”>Vue-ui-preloader</a>
+      </div>
       <transition-fade :easing="{ enter: 'ease-in', leave: 'ease-out'}" :duration="500">
         <div class="container form" v-if="flag">
             <div class="row">
@@ -148,7 +151,7 @@ export default {
     loader(loader) {
       this.selected=loader;
       this.loadComponent=true;
-      this.code=`<loader object="${this.styling.objectcolor}" color1="${this.styling.animationcolor}" color2="${this.styling.animationcolor2}" size="${this.styling.size}" speed="${this.styling.speed}" bg="${this.styling.bgcolor}" objectbg="${this.styling.objectbg}" opacity="${this.styling.opacity}" disableScrolling="${this.styling.disableScrolling}" name="${this.selected}"></loader>`
+      this.code=`<loader  name="${this.selected}" loadingText="${this.styling.loadingText}" textColor="${this.styling.textColor}" textSize="${this.styling.textSize}" textWeight="${this.styling.textWeight}" object="${this.styling.objectcolor}" color1="${this.styling.animationcolor}" color2="${this.styling.animationcolor2}" size="${this.styling.size}" speed="${this.styling.speed}" bg="${this.styling.bgcolor}" objectbg="${this.styling.objectbg}" opacity="${this.styling.opacity}" :disableScrolling="${this.styling.disableScrolling}"></loader>`
       setTimeout(() => {
         this.loadComponent=false;
       }, this.value*1000);
@@ -170,6 +173,17 @@ export default {
 <style scoped>
   @import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
   
+  .remake {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-weight: bold;
+    color: lightyellow;
+    font-size: 20px;
+  }
+
   .options-loader{
     display: flex;
     flex-direction: row;
