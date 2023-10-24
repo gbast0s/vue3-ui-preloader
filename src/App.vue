@@ -23,7 +23,7 @@
       </div>
       <h1><b><span id="ui">UI</span><span id="topia">topia</span></b></h1>
 
-      <p class="row justify-content-md-center">Vue3-Ui-Loader is a preloader component made with CSS transistions and animations</p>
+      <p class="row justify-content-md-center">Vue3 Ui Preloader component made with CSS transistions and animations</p>
       <div class="remake">
         <span class="row justify-content-md-center">Remake made from:</span>
         <a href="https://www.npmjs.com/package/vue-ui-preloader" target=”_blank”>Vue-ui-preloader</a>
