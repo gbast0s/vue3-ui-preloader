@@ -34,13 +34,8 @@ In your main.js
 ```js
 import loader from "vue3-ui-preloader";
 
-//CSS
+// Import the CSS or use your own!
 import "vue3-ui-preloader/dist/loader.css"
-
-const app = createApp(App)
-    .use(loader)
-
-app.mount('#app')
 ```
 
 In your template
@@ -71,16 +66,10 @@ In your main.js
 ```js
 import loader from "vue3-ui-preloader";
 
-//CSS
+// Import the CSS or use your own!
 import "vue3-ui-preloader/dist/loader.css"
 
 const app = createApp(App)
-    .use(loader)
-
-app.component('loader', loader)
-
-
-app.mount('#app')
 ```
 
 ## Props
