@@ -32,11 +32,18 @@ npm install --save vue3-ui-preloader
 
 In your main.js
 ```js
-import Vue from "vue";
+import { createApp } from 'vue'
+import App from './App.vue'
 import loader from "vue3-ui-preloader";
 
 // Import the CSS or use your own!
 import "vue3-ui-preloader/dist/loader.css"
+
+const app = createApp(App)
+
+app.component('loader', loader)
+
+app.mount('#app')
 ```
 
 In your template
@@ -65,13 +72,14 @@ In your template
 
 In your main.js
 ```js
-import Vue from "vue";
-import loader from "vue3-ui-preloader";
-
-// Import the CSS or use your own!
-import "vue3-ui-preloader/dist/loader.css"
+import { createApp } from 'vue'
+import App from './App.vue'
 
 const app = createApp(App)
+
+app.component('loader', loader)
+
+app.mount('#app')
 ```
 
 ## Props
