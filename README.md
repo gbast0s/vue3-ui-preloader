@@ -55,8 +55,8 @@ In your template
 </template>
 ```
 
->NOTE: The best way to control the loader is to have a flag and use it in a v-if or v-show statement.<br>
->(you can either use the [playground](https://vue3-ui-preloader.netlify.app/) website to automatically get all the props set or you can set them manaully using the below prop list. You can also resort to not passing any prop, in this case the preloader will use default settings.)
+>**NOTE:** The best way to control the loader is to have a flag and use it in a `v-if` or `v-show` statement.<br>
+>You can either use the [playground](https://vue3-ui-preloader.netlify.app/) website to automatically get all the props set or you can set them manaully using the below prop list. You can also resort to not passing any prop, in this case the preloader will use default settings.
 
 ## Via CDN
 
