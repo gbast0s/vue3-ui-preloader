@@ -153,7 +153,7 @@ export default {
       this.selected=loader;
       this.loadComponent=true;
       this.$refs.textArea.style.cursor = "pointer";
-      this.code=`<loader  name="${this.selected}" loadingText="${this.styling.loadingText}" textColor="${this.styling.textColor}" textSize="${this.styling.textSize}" textWeight="${this.styling.textWeight}" object="${this.styling.objectcolor}" color1="${this.styling.animationcolor}" color2="${this.styling.animationcolor2}" size="${this.styling.size}" speed="${this.styling.speed}" bg="${this.styling.bgcolor}" objectbg="${this.styling.objectbg}" opacity="${this.styling.opacity}" :disableScrolling="${this.styling.disableScrolling}"></loader>`
+      this.code=`<loader name="${this.selected}" loadingText="${this.styling.loadingText}" textColor="${this.styling.textColor}" textSize="${this.styling.textSize}" textWeight="${this.styling.textWeight}" object="${this.styling.objectcolor}" color1="${this.styling.animationcolor}" color2="${this.styling.animationcolor2}" size="${this.styling.size}" speed="${this.styling.speed}" bg="${this.styling.bgcolor}" objectbg="${this.styling.objectbg}" opacity="${this.styling.opacity}" :disableScrolling="${this.styling.disableScrolling}"></loader>`
       setTimeout(() => {
         this.loadComponent=false;
       }, this.value*1000);
