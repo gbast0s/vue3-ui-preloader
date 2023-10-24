@@ -49,7 +49,7 @@ app.mount('#app')
 In your template
 ```vue
 <template>
-<loader  name="spinning" loadingText="Loading..." textColor="#ffffff" textSize="20" textWeight="500" object="#ff9633" color1="#ffffff" color2="#17fd3d" size="5" speed="2" bg="#343a40" objectbg="#999793" opacity="80" :disableScrolling="true"></loader>
+	<loader  name="spinning" loadingText="Loading..." textColor="#ffffff" textSize="20" textWeight="500" object="#ff9633" color1="#ffffff" color2="#17fd3d" size="5" speed="2" bg="#343a40" objectbg="#999793" opacity="80" :disableScrolling="true"></loader>
 </template>
 ```
 
@@ -66,7 +66,7 @@ In your index.html
 In your template
 ```html
 <div id="app">
-<loader  name="spinning" loadingText="Loading..." textColor="#ffffff" textSize="20" textWeight="500" object="#ff9633" color1="#ffffff" color2="#17fd3d" size="5" speed="2" bg="#343a40" objectbg="#999793" opacity="80" :disableScrolling="true"></loader>
+	<loader  name="spinning" loadingText="Loading..." textColor="#ffffff" textSize="20" textWeight="500" object="#ff9633" color1="#ffffff" color2="#17fd3d" size="5" speed="2" bg="#343a40" objectbg="#999793" opacity="80" :disableScrolling="true"></loader>
 </div>
 ```
 
