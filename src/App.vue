@@ -101,6 +101,7 @@
           @click="copyToClipboard"
           id="textarea" 
           class="w-100 costum-text-area"
+          ref="textArea"
           v-model="code" 
           readonly
           rows="3" 
@@ -151,6 +152,7 @@ export default {
     loader(loader) {
       this.selected=loader;
       this.loadComponent=true;
+      this.$refs.textArea.style.cursor = "pointer";
       this.code=`<loader  name="${this.selected}" loadingText="${this.styling.loadingText}" textColor="${this.styling.textColor}" textSize="${this.styling.textSize}" textWeight="${this.styling.textWeight}" object="${this.styling.objectcolor}" color1="${this.styling.animationcolor}" color2="${this.styling.animationcolor2}" size="${this.styling.size}" speed="${this.styling.speed}" bg="${this.styling.bgcolor}" objectbg="${this.styling.objectbg}" opacity="${this.styling.opacity}" :disableScrolling="${this.styling.disableScrolling}"></loader>`
       setTimeout(() => {
         this.loadComponent=false;
@@ -160,6 +162,7 @@ export default {
       if(this.code.trim().length > 0)
       {
         navigator.clipboard.writeText(this.code);
+        this.$toast.success('Copied to clipboard');
       }
     }
   },
@@ -201,7 +204,8 @@ export default {
   }
 
   .costum-text-area {
-    pointer-events: none;
+    outline: 0;
+    cursor: default;
   }
 
   h1{
