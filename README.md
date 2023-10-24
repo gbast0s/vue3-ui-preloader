@@ -13,6 +13,16 @@
 
 Remake made from: [Vue-ui-preloader](https://www.npmjs.com/package/vue-ui-preloader).
 
+## Main changes
+
+- Added support for Vue 3.
+- Fixed the issue where the "disabledOverflow" class remained active after the first use.
+- Added options to add text to the loaders and customize them.
+
+
+
+
+
 ## Demo and playground
 Live demo -  https://vue3-ui-preloader.netlify.app/
 
