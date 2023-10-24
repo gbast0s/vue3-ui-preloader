@@ -51,8 +51,6 @@ In your template
 
 ## Via CDN
 
-CDN demo link - http://jsfiddle.net/8961cm0s/1/
-
 In your index.html
 ```html
 <script src="https://unpkg.com/vue3-ui-preloader"></script>
