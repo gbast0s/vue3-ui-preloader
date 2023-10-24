@@ -16,7 +16,7 @@ Remake made from: [Vue-ui-preloader](https://www.npmjs.com/package/vue-ui-preloa
 ## Main changes
 
 - Added support for Vue 3.
-- Fixed the issue where the "disabledOverflow" class remained active after the first use.
+- Fixed the issue where the "overflowHidden" class remained active after the first use.
 - Added options to add text to the loaders and customize them.
 
 
