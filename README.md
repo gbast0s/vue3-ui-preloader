@@ -31,6 +31,8 @@ Adjust the settings using the playground options. On the bottom of the page you 
 
 npm link - https://www.npmjs.com/package/vue3-ui-preloader
 
+Vue 3 blitz link - https://stackblitz.com/edit/vue-xxhtha?file=src%2FApp.vue
+
 ## Installation
 
 ```bash
@@ -41,6 +43,8 @@ npm install --save vue3-ui-preloader
 ```
 
 ## Usage
+
+Vue 3 blitz link - https://stackblitz.com/edit/vue-xxhtha?file=src%2FApp.vue
 
 In your main.js
 ```js
@@ -70,6 +74,8 @@ In your template
 
 ## Via CDN
 
+CDN demo link - https://jsfiddle.net/1t0jyeqh/10/
+
 In your index.html
 ```html
 <script src="https://unpkg.com/vue3-ui-preloader"></script>
@@ -86,11 +92,10 @@ In your template
 In your main.js
 ```js
 import { createApp } from 'vue'
-import App from './App.vue'
 
-const app = createApp(App)
+const { createApp } = Vue
 
-app.component('loader', loader)
+const app = createApp(loader)
 
 app.mount('#app')
 ```
