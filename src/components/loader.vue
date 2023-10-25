@@ -36,45 +36,59 @@ export default {
   props: {
     object: {
       type: String,
+      default: '#ff9633',
     },
     color1: {
       type: String,
+      default: '#ffffff',
     },
     color2: {
       type: String,
+      default: '#17fd3d',
     },
     loadingText: {
         type: String,
+        default: 'LOADING...',
     },
     textColor: {
         type: String,
+        default: '#ffffff',
     },
     textSize: {
         type: [String, Number],
+        default: 15,
     },
     textWeight: {
         type: [String, Number],
+        default: 800,
     },
     size: {
         type: [String, Number],
+        default: 5,
     },
     speed: {
         type: [String, Number],
+        default: 2,
     },
     opacity: {
         type: [String, Number],
+        default: 80,
     },
     bg: {
       type: String,
+      default: '#343a40',
     },
     objectbg: {
       type: String,
+      default: '#999793',
     },
     name: {
       type: String,
+      default: 'spinning',
     },
     disableScrolling: {
       type: Boolean,
+      default: false,
     },
   }
 }

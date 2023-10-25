@@ -83,7 +83,7 @@ export default {
 
     :root{
         --time-animation: spin 2s linear infinite;
-        --load-text-size: 12px;
+        --load-text-size: 15px;
         --load-text-color: #384aeb;
         --load-text-weight: 800;
     }

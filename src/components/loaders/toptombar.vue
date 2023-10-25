@@ -61,7 +61,7 @@ export default {
     created() {
         let root = document.documentElement;
         root.style.setProperty('--time-animation', "load " + this.speed + "s infinite alternate ease-in-out");
-        root.style.setProperty('--color-bar',this.objectbg);
+        root.style.setProperty('--color-bar', this.objectbg);
 
         root.style.setProperty('--load-text-color', this.textColor);
         root.style.setProperty('--load-text-size', this.textSize + 'px');
@@ -86,7 +86,7 @@ export default {
     :root{
         --time-animation: load .7s infinite alternate ease-in-out;
         --color-bar: #ffbb0f;
-        --load-text-size: 12px;
+        --load-text-size: 15px;
         --load-text-color: #384aeb;
         --load-text-weight: 800;
     }

@@ -102,7 +102,7 @@ app.mount('#app')
 | object | string | '#ff9633' | set the color of the loaders. hex or color |
 | loadingText | string | 'Loading...' | set the text of some loaders. |
 | textColor | string | '#ffffff' | set the color of the loadingText. hex or color |
-| textSize | number | '20' | set the size of the loadingText. |
+| textSize | number | '15' | set the size of the loadingText. |
 | textWeight | number/string | '800' | set the weight of the loadingText. (Ex: 800, bold) |
 | color1 | string | only for circular | set the color of the circular loader disk1. hex or color |
 | color2 | string | only for circular | set the color of the circular loader disk2. hex or color |
