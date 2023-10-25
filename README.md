@@ -91,8 +91,6 @@ In your template
 
 In your main.js
 ```js
-import { createApp } from 'vue'
-
 const { createApp } = Vue
 
 const app = createApp(loader)
