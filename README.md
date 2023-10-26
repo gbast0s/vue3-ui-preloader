@@ -31,7 +31,7 @@ Adjust the settings using the playground options. On the bottom of the page you 
 
 npm link - https://www.npmjs.com/package/vue3-ui-preloader
 
-Vue 3 blitz link - https://stackblitz.com/edit/vue-xxhtha?file=src%2FApp.vue
+Vue 3 blitz link - https://stackblitz.com/edit/vue-caijgu?file=src%2FApp.vue
 
 ## Installation
 
@@ -44,7 +44,7 @@ npm install --save vue3-ui-preloader
 
 ## Usage
 
-Vue 3 blitz link - https://stackblitz.com/edit/vue-xxhtha?file=src%2FApp.vue
+Vue 3 blitz link - https://stackblitz.com/edit/vue-caijgu?file=src%2FApp.vue
 
 In your main.js
 ```js
@@ -65,7 +65,7 @@ app.mount('#app')
 In your template
 ```vue
 <template>
-	<loader  name="spinning" loadingText="Loading..." textColor="#ffffff" textSize="20" textWeight="500" object="#ff9633" color1="#ffffff" color2="#17fd3d" size="5" speed="2" bg="#343a40" objectbg="#999793" opacity="80" :disableScrolling="true"></loader>
+	<loader  name="spinning" loadingText="LOADING..." textColor="#ffffff" textSize="20" textWeight="500" object="#ff9633" color1="#ffffff" color2="#17fd3d" size="5" speed="2" bg="#343a40" objectbg="#999793" opacity="80" :disableScrolling="true"></loader>
 </template>
 ```
 
@@ -85,7 +85,7 @@ In your index.html
 In your template
 ```html
 <div id="app">
-	<loader  name="spinning" loadingText="Loading..." textColor="#ffffff" textSize="20" textWeight="500" object="#ff9633" color1="#ffffff" color2="#17fd3d" size="5" speed="2" bg="#343a40" objectbg="#999793" opacity="80" :disableScrolling="true"></loader>
+	<loader  name="spinning" loadingText="LOADING..." textColor="#ffffff" textSize="20" textWeight="500" object="#ff9633" color1="#ffffff" color2="#17fd3d" size="5" speed="2" bg="#343a40" objectbg="#999793" opacity="80" :disableScrolling="true"></loader>
 </div>
 ```
 
@@ -101,20 +101,20 @@ app.mount('#app')
 ## Props
 | Name | Type | Default | Description |
 |:-----|:-----|:--------|:------------|
-| name | string | 'spinning' | decides the type of loader |
-| object | string | '#ff9633' | set the color of the loaders. hex or color |
-| loadingText | string | 'Loading...' | set the text of some loaders. |
-| textColor | string | '#ffffff' | set the color of the loadingText. hex or color |
+| name | string | 'spinning' | decides the type of loader. (Ex: spinning, dots, loading, circular, box) |
+| object | string | '#ff9633' | set the color of the loaders. (Ex: hex or color) |
+| loadingText | string | 'LOADING...' | set the text of some loaders. |
+| textColor | string | '#ffffff' | set the color of the loadingText. (Ex: hex or color) |
 | textSize | number | '15' | set the size of the loadingText. |
 | textWeight | number/string | '800' | set the weight of the loadingText. (Ex: 800, bold) |
-| color1 | string | only for circular | set the color of the circular loader disk1. hex or color |
-| color2 | string | only for circular | set the color of the circular loader disk2. hex or color |
-| size | number | 5 | set the size of loader |
-| bg | string | '#343a40' | set the color of the loader background. hex or color |
-| objectbg | string | '#999793' | set the color of the loader object background. hex or color |
-| opacity | number | 80 | set the opacity of background |
-| speed | number | 2 | animation speed in seconds |
-| disableScrolling | boolean | false | disable page scrolling when preloader is open |
+| color1 | string | only for circular | set the color of the circular loader disk1. (Ex: hex or color) |
+| color2 | string | only for circular | set the color of the circular loader disk2. (Ex: hex or color) |
+| size | number | 5 | set the size of loader. |
+| bg | string | '#343a40' | set the color of the loader background. (Ex: hex or color) |
+| objectbg | string | '#999793' | set the color of the loader object background. (Ex: hex or color) |
+| opacity | number | 80 | set the opacity of background. |
+| speed | number | 2 | animation speed in seconds. |
+| disableScrolling | boolean | false | disable page scrolling when preloader is open. |
 
 ## Author
 
