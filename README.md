@@ -37,7 +37,7 @@ Vue 3 blitz link - https://stackblitz.com/edit/vue-caijgu?file=src%2FApp.vue
 
 ```bash
 # use yarn
-yarn add vue-ui-preloader
+yarn add vue3-ui-preloader
 # use npm
 npm install --save vue3-ui-preloader
 ```
