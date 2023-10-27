@@ -35,7 +35,7 @@
                     <h5 class="options-loader"><span class="textLoading">Text color:</span>
                         <input type="text" class="form-control costum-input" id="favcolor" name="favcolor" v-model="styling.loadingText">
                     </h5>
-                    <h5 class="options-loader">Text color:
+                    <h5 class="options-loader">Loader Text:
                         <input type="color" id="favcolor" name="favcolor" v-model="styling.textColor">
                         {{styling.textColor}}</h5>
                     <h5 class="options-loader">Object color:
