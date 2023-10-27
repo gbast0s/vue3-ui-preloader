@@ -32,10 +32,10 @@
         <div class="container form" v-if="flag">
             <div class="row">
                 <div class="col-sm">
-                    <h5 class="options-loader"><span class="textLoading">Text color:</span>
+                    <h5 class="options-loader"><span class="textLoading">Loader Text:</span>
                         <input type="text" class="form-control costum-input" id="favcolor" name="favcolor" v-model="styling.loadingText">
                     </h5>
-                    <h5 class="options-loader">Loader Text:
+                    <h5 class="options-loader">Text color:
                         <input type="color" id="favcolor" name="favcolor" v-model="styling.textColor">
                         {{styling.textColor}}</h5>
                     <h5 class="options-loader">Object color:
